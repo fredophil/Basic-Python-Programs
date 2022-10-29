@@ -5,7 +5,7 @@ total_questions=3
 if answer.lower()=='yes':
     answer=input('Question 1: Who is the founder of Python ? ')
     a = 'Guido van Rossum'
-    if answer.lower()=='a':
+    if answer.lower()== a.lower():
         score += 1
         print('correct')
     else:
@@ -20,8 +20,8 @@ if answer.lower()=='yes':
         print('Wrong Answer :(')
         print('The correct answer is :',b,'Python is interpreted language')
     answer=input('Question 3: Whether Python is dynamically typed language or statically typed language ? ')
-    c = 'dynamically typed language'
-    if answer.lower()== c:
+    c = ['dynamically typed language', 'dynamically']
+    if answer.lower() in c:
         score += 1
         print('correct')
     else:
@@ -29,7 +29,7 @@ if answer.lower()=='yes':
         print('The correct answer is : Python is dynamically typed language')
 print()
 print()
-print('Thankyou for Playing this small quiz game. You attempted',score,"questions correctly!")
+print('Thankyou for Playing this small quiz game. You answered',score,"questions correctly!")
 mark=(score/total_questions)*100
 print()
 print('Marks obtained:',mark)
